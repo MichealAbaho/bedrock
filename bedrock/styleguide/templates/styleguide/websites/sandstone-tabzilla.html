@@ -28,15 +28,15 @@
   <p>Tabzilla automatically resizes to the screen resolution and real estate of the device being used. All content is updated and pushed from a central location. Please read the requirements and follow the installation instructions further down this page to correctly add Tabzilla to your site.</p>
   <section id="tabzilla-phone">
     <h3>Smartphone tab</h3>
-    <img src="{{ media('/img/styleguide/websites/sandstone/tabzilla-phone.png?2013-06') }}" alt="Smartphone tabzilla" />
+    <img src="{{ static('img/styleguide/websites/sandstone/tabzilla-phone.png') }}" alt="Smartphone tabzilla" />
   </section>
   <section id="tabzilla-tablet">
     <h3>Tablet tab</h3>
-    <img src="{{ media('/img/styleguide/websites/sandstone/tabzilla-tablet.png?2013-06') }}" alt="Tablet tabzilla" />
+    <img src="{{ static('img/styleguide/websites/sandstone/tabzilla-tablet.png') }}" alt="Tablet tabzilla" />
   </section>
   <section id="tabzilla-desktop">
     <h3>Desktop tab</h3>
-    <img src="{{ media('/img/styleguide/websites/sandstone/tabzilla-desktop.png?2013-06') }}" alt="Desktop tabzilla" />
+    <img src="{{ static('img/styleguide/websites/sandstone/tabzilla-desktop.png') }}" alt="Desktop tabzilla" />
   </section>
 </section>
 
@@ -60,7 +60,7 @@
     <li>Add the static tab link (example below) to the top of your template <br />
     <code>&lt;a href="{{ url('mozorg.home') }}" id="tabzilla"&gt;mozilla&lt;/a&gt;</code></li>
     <li>Include the tabzilla.css CSS file either as a CSS include or built into your minified styles <br />
-    <code>&lt;link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" /&gt;</code></li>
+    <code>&lt;link href="//mozorg.cdn.mozilla.net/static/css/tabzilla-min.css" rel="stylesheet" /&gt;</code></li>
     <li>Include the tabzilla.js file in your template (preferably in the footer) <br />
     <code>&lt;script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"&gt;&lt;/script&gt;</code></li>
   </ol>

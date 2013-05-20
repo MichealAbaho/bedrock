@@ -19,7 +19,7 @@ Adding the universal tab to a site requires:
 
 2. Include the tabzilla.css CSS file either as a CSS include or built in to your minified styles::
 
-    <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+    <link href="//mozorg.cdn.mozilla.net/static/css/tabzilla-min.css" rel="stylesheet" />
 
 3. Include the tabzilla.js file in your template (preferably in the footer)::
 

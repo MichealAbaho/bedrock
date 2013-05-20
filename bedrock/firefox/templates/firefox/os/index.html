@@ -35,7 +35,7 @@
         <a href="{{ url('mozorg.home') }}" id="tabzilla">Mozilla</a>
 
         {% block site_header_logo %}
-        <h2 id="ffos-main-logo"><a href="#masthead" class="nav"><img src="{{ MEDIA_URL }}img/firefox/os/logo/firefox-os.png" alt="Firefox OS"></a></h2>
+        <h2 id="ffos-main-logo"><a href="#masthead" class="nav"><img src="{{ static('img/firefox/os/logo/firefox-os.png') }}" alt="Firefox OS"></a></h2>
         {% endblock %}
 
         {% block site_header_nav %}
@@ -359,7 +359,7 @@
   </div>
 
   <section class="item container" id="best-of-the-web">
-    <img src="{{ MEDIA_URL }}img/firefox/os/foxy-splash.png" alt="Firefox OS">
+    <img src="{{ static('img/firefox/os/foxy-splash.png') }}" alt="Firefox OS">
     <div class="content">
       <h2>{{_('The best of the Web')}}</h2>
       <p>{{_('Firefox changed browsing forever by putting users first and offering a new level of choice and innovation online. Now we’re doing it all over again with Firefox OS, while bringing the same superior browsing experience to your smartphone. So you can take control of your life online and get the best the Web has to offer no matter where you go.')}}</p>
@@ -411,7 +411,7 @@
 <div id="get-phone-wrapper">
   <div id="get-phone" class="modal-content">
     <header>
-      <img src="{{ MEDIA_URL }}img/firefox/os/logo/firefox-os-white.png" alt="mozilla">
+      <img src="{{ static('img/firefox/os/logo/firefox-os-white.png') }}" alt="mozilla">
       <button type="button" class="close"><span class="close-text">{{ _('Close') }}</span></button>
     </header>
 
@@ -436,7 +436,7 @@
   <div id="email-form-wrapper">
     <div id="email-form-content" class="modal-content">
       <header>
-        <img src="{{ MEDIA_URL }}img/firefox/os/logo/firefox-os-white.png" alt="mozilla">
+        <img src="{{ static('img/firefox/os/logo/firefox-os-white.png') }}" alt="mozilla">
         <button type="button" class="close"><span class="close-text">{{ _('Close') }}</span></button>
       </header>
       <div class="content">

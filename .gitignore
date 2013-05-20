@@ -21,6 +21,7 @@ tmp/*
 *.less.css
 db.sql
 /locale
+/static
 Thumbs.db
 Desktop.ini
 venv

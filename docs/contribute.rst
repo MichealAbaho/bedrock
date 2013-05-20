@@ -128,7 +128,7 @@ Server architecture
 - *Bedrock Git branch:* master, updated manually
 
 We use Chief for the manual deploys. You can check the currently deployed git
-commit by checking https://www.mozilla.org/media/revision.txt.
+commit by checking https://www.mozilla.org/static/revision.txt.
 
 If you want to know more and you have an LDAP account, you can check the
 `IT documentation`_.

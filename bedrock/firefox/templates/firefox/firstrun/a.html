@@ -1,6 +1,6 @@
 {# This Source Code Form is subject to the terms of the Mozilla Public
- # License, v. 2.0. If a copy of the MPL was not distributed with this
- # file, You can obtain one at http://mozilla.org/MPL/2.0/. #}
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/. #}
 
 {% extends "firefox/base.html" %}
 
@@ -11,50 +11,50 @@
 {% block site_header_logo %}{% endblock %}
 
 {% block extrahead %}
- <link rel="canonical" href="https://www.mozilla.org/en-US/firefox/22.0/firstrun/" />
+<link rel="canonical" href="https://www.mozilla.org/en-US/firefox/22.0/firstrun/" />
 {% endblock %}
 
 {% block site_css %}
-  {{ css('firefox_firstrun_new_a') }}
+{{ css('firefox_firstrun_new_a') }}
 {% endblock %}
 
 {% block string_data %}
-  {# L10n: This is the label for a button that closes a modal dialog #}
-  data-close="{{ _('Close') }}"
+{# L10n: This is the label for a button that closes a modal dialog #}
+data-close="{{ _('Close') }}"
 {% endblock %}
 
 {% block content %}
 <main role="main">
-  <header id="page-header">
-    <img src="{{ media('img/firefox/firstrun/firefox-logo.png') }}" alt="Firefox" />
-    <h1 class="large">{{_('Welcome to Firefox!')}}</h1>
-    <h2>{{ _('Discover what makes it different.') }}</h2>
-  </header>
+<header id="page-header">
+<img src="{{ static('img/firefox/firstrun/firefox-logo.png') }}" alt="Firefox" />
+<h1 class="large">{{_('Welcome to Firefox!')}}</h1>
+<h2>{{ _('Discover what makes it different.') }}</h2>
+</header>
 
-  <ul class="social">
-    <li>
-      <img src="{{ media('img/firefox/firstrun/facebook.png') }}">
-      <a class="facebook" href="https://www.facebook.com/Firefox">{{ _('Like us on Facebook') }}</a>
-    </li>
-    <li>
-      <img src="{{ media('img/firefox/firstrun/twitter.png') }}">
-      <a class="twitter" href="https://twitter.com/firefox">{{ _('Follow us on Twitter') }}</a>
-    </li>
-  </ul>
+<ul class="social">
+<li>
+<img src="{{ static('img/firefox/firstrun/facebook.png') }}">
+<a class="facebook" href="https://www.facebook.com/Firefox">{{ _('Like us on Facebook') }}</a>
+</li>
+<li>
+<img src="{{ static('img/firefox/firstrun/twitter.png') }}">
+<a class="twitter" href="https://twitter.com/firefox">{{ _('Follow us on Twitter') }}</a>
+</li>
+</ul>
 
-  <nav class="sticky-nav" id="sticky-nav" role="navigation">
-    <ul>
-      <li>
-        <a href="#themes">{{ _('Customization') }}</a>
-      </li>
-      <li>
-        <a href="#fasteasy">{{ _('Shortcuts') }}</a>
-      </li>
-      <li class="last">
-        <a href="#pinnedtabs">{{ _('Innovative features') }}</a>
-      </li>
-    </ul>
-  </nav>
+<nav class="sticky-nav" id="sticky-nav" role="navigation">
+<ul>
+<li>
+<a href="#themes">{{ _('Customization') }}</a>
+</li>
+<li>
+<a href="#fasteasy">{{ _('Shortcuts') }}</a>
+</li>
+<li class="last">
+<a href="#pinnedtabs">{{ _('Innovative features') }}</a>
+</li>
+</ul>
+</nav>
 
   <article class="feature" id="themes">
     <div class="copy">

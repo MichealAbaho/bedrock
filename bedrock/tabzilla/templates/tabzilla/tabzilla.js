@@ -368,7 +368,7 @@ var Tabzilla = (function (Tabzilla) {
         } else {
             script.onload = noConflictCallback;
         }
-        script.src = '//mozorg.cdn.mozilla.net/media/js/libs/jquery-' + minimumJQuery + '.min.js';
+        script.src = '//mozorg.cdn.mozilla.net/static/js/libs/jquery-' + minimumJQuery + '.min.js';
         document.getElementsByTagName('head')[0].appendChild(script);
     };
     var compareVersion = function (a, b) {

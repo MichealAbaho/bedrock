@@ -38,15 +38,15 @@ Embedding images
 
 Images should be included on pages using helper functions.
 
-media()
+static()
 ^^^^^^^^^^^
-For a simple image, the `media()` function is used to generate the image URL. For example::
+For a simple image, the `static()` function is used to generate the image URL. For example::
 
-	<img src="{{ media('img/firefox/new/firefox-logo.png') }}" alt="Firefox" />
+	<img src="{{ static('img/firefox/new/firefox-logo.png') }}" alt="Firefox" />
 
 will output an image::
 
-    <img src="/media/img/firefox/new/firefox-logo.png" alt="Firefox">
+    <img src="/static/img/firefox/new/firefox-logo.png" alt="Firefox">
 
 high_res_img()
 ^^^^^^^^^^^
@@ -62,7 +62,7 @@ Images that have translatable text can be handled with `img_l10n()`::
 
 	<img src="{{ img_l10n('firefox/os/have-it-all/messages.jpg') }}" />
 
-The images referenced by `img_l10n()` must exist in `media/img/l10n/`, so for above example, the images could include `media/img/l10n/en-US/firefox/os/have-it-all/messages.jpg` and `media/img/l10n/es-ES/firefox/os/have-it-all/messages.jpg`.
+The images referenced by `img_l10n()` must exist in `static/img/l10n/`, so for above example, the images could include `static/img/l10n/en-US/firefox/os/have-it-all/messages.jpg` and `static/img/l10n/es-ES/firefox/os/have-it-all/messages.jpg`.
 
 platform_img()
 ^^^^^^^^^^^^^^
