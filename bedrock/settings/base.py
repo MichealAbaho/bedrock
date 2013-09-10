@@ -74,6 +74,12 @@ STATICFILES_DIRS = (
     path('static_src'),
 )
 
+MEDIA_ROOT = ''
+MEDIA_URL = ''
+
+STATIC_ROOT = path('media')
+STATIC_URL = '/media/'
+
 TEMPLATE_DIRS = (
     path('locale'),
 )

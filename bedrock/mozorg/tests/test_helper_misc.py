@@ -309,23 +309,23 @@ class TestPressBlogUrl(TestCase):
 
 
 class TestHighResImg(TestCase):
-    @override_settings(STATIC_URL='/static/')
+    @override_settings(STATIC_URL='/media/')
     def test_high_res_img_no_optional_attributes(self):
         """Should return expected markup without optional attributes"""
         markup = high_res_img('test.png')
         expected = (
-            u'<img class="js" src="" data-src="/static/test.png" '
+            u'<img class="js" src="" data-src="/media/test.png" '
             u'data-high-res="true" >'
-            u'<noscript><img src="/static/test.png" ></noscript>')
+            u'<noscript><img src="/media/test.png" ></noscript>')
         self.assertEqual(markup, jinja2.Markup(expected))
 
-    @override_settings(STATIC_URL='/static/')
+    @override_settings(STATIC_URL='/media/')
     def test_high_res_img_with_optional_attributes(self):
         """Should return expected markup with optional attributes"""
         markup = high_res_img('test.png', {'data-test-attr': 'test'})
         expected = (
-            u'<img class="js" src="" data-src="/static/test.png" '
+            u'<img class="js" src="" data-src="/media/test.png" '
             u'data-high-res="true" data-test-attr="test">'
-            u'<noscript><img src="/static/test.png" data-test-attr="test">'
+            u'<noscript><img src="/media/test.png" data-test-attr="test">'
             u'</noscript>')
         self.assertEqual(markup, jinja2.Markup(expected))
